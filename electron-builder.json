@@ -1,7 +1,7 @@
 {
     "appId": "com.example.app",
     "files":["dist-electron","dist-react"],
-    "icon":"./icon.png",
+    "icon":"src/electron/icon.png",
     "mac":{
         "target":"dmg",
         "icon":"./icon.png"
@@ -10,10 +10,11 @@
         "target":["AppImage","deb"],
         "category":"Development",
         "maintainer": "Your Name <your.email@example.com>",
-        "icon":"./icon.png"
+        "icon":"src/electron/icon.png"
     },
     "win":{
         "target":["portable","msi"],
         "icon":"./icon.png"
     }
 }
+

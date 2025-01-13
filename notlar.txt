@@ -8,3 +8,5 @@ npm run dev:electron
 dist-react içindeki assest içindeki yolların başına nokta ekle veya diğer yöntemi kullan vite config içindeki alana base ekle. sonra ise build
 
 npm i --save-dev electron-builder
+
+npm i -save-dev cross-dev
