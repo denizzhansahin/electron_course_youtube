@@ -2,8 +2,13 @@ import { app, BrowserWindow } from 'electron';
 import path from 'path';
 import { isDev } from './utils.js';
 import { pollResources } from './resourceManager.js';
+import { getPreloadPath } from './pathResolver.js';
 app.on('ready', () => {
-    const mainWindow = new BrowserWindow({});
+    const mainWindow = new BrowserWindow({
+        webPreferences: {
+            preload: getPreloadPath()
+        }
+    });
     console.log('isDev:', isDev());
     console.log('Environment:', process.env.NODE_ENV);
     if (isDev()) {
