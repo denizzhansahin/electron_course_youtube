@@ -11,3 +11,10 @@ npm i --save-dev electron-builder
 
 npm i --save-dev cross-env
 bunun sağlıklı çalışması için gerekli işlemlerden(NODE_ENV için) sonra : npm run transpile:electron kullan. daha sonra npm run dev:electron kullan
+ama bu şekilde de ayarla :     "dev:electron": "npm run transpile:electron; cross-env NODE_ENV=development electron .",
+
+npm i --save-dev npm-run-all
+
+npm i os-utils
+npm i --save-dev @types/os-utils
+npm i --save-dev @types/os-utils
