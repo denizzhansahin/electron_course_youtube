@@ -1,1 +1,6 @@
 npm create vite .
+ 3214  npm install
+ 3215  npm run dev
+ 3216  npm run build
+ npm install --save-dev electron
+npm run dev:electron
